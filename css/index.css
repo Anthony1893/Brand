@@ -13,12 +13,28 @@ article {
 }
 .header{
     border-radius: 10px;
-    background-color: green;
+
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
-
+    grid-template-rows: 20px 50px 70px;
+}
+#bild{
+    margin-left: 10%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#searchbox{
+    outline: none;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border-radius: 10px;
 }
 .sidenav {
+    outline: none;
     height: 100%;
     width: 0;
     position: fixed;
@@ -29,6 +45,7 @@ article {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+
 }
 
 .sidenav a {
@@ -51,8 +68,12 @@ article {
     font-size: 36px;
     margin-left: 50px;
 }
-
+#symbol{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 @media screen and (max-height: 450px) {
+
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
@@ -61,24 +82,19 @@ article {
     border-radius: 10px;
     display: grid;
     grid-template-columns:  2fr 2fr 2fr;
-   grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+   grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 
 }
 .überschrift{
-
     display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
 
 }
-#firstkat-schrift{
-    border-radius: 10px;
-    text-align: center;
-    background-color: black;
-    font-size: 350%;
-    color: whitesmoke;
 
-}
+
 
 
 .footer{
@@ -90,15 +106,54 @@ article {
 
 }
 .footer-grid{
+    margin-left: 25%;
+
     display: grid;
-    grid-template-columns: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 .footer_header_liste{
-   margin-left: 40%;
+
     color: lightgray;
 
 }
 .text{
+    grid-column-end: 4;
+
     color: white;
+
+}
+#firstkat-schrift{
+
+    border-radius: 10px;
+    background-color: black;
+}
+#banner3 {
+
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1%;
+
+}
+.tri {
+
+ float: left;
+    position: relative;
+    width:14%;
+    max-width: 14%;
+
     text-align: center;
+}
+.tri img {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5%;
+    height: 300px;
+
+    vertical-align: bottom;
+
+}
+.tri img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
