@@ -6,25 +6,77 @@
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-<div class="container"></div>
-<header></header>
-<footer class="footer">
-    <ul class="footer-grid">
-        <li>
-            <span class="footer_header_liste">About</span>
-            <p class="text">jasdoiasdjoas</p>
-        </li>
-    </ul>
-    <ul class="footer-grid">
-        <li>
-            <span class="footer_header_liste">Support</span>
-        </li>
-    </ul>
-    <ul class="footer-grid">
-        <li>
-            <span class="footer_header_liste">Sociale</span>
-        </li>
-    </ul>
-</footer>
+    <article>
+          <header class="header">
+              <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+
+              </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+              <script>
+                  function openNav() {
+                      document.getElementById("mySidenav").style.width = "250px";
+                      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+                  }
+
+                  function closeNav() {
+                      document.getElementById("mySidenav").style.width = "0";
+                      document.body.style.backgroundColor = "white";
+                  }
+
+              </script>
+         </header>
+
+        <div class="container">
+                <div class="überschrift">
+                    <h1 id="firstkat-schrift">
+                        Top 10
+                    </h1>
+                </div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <ul class="footer-grid">
+                <li>
+                    <span class="footer_header_liste">About</span>
+                    <p class="text">Careers</p>
+                    <p class="text">Worm</p>
+                </li>
+            </ul>
+            <ul class="footer-grid">
+                <li>
+                    <span class="footer_header_liste">Support</span>
+                    <p class="text">FAQS</p>
+                    <p class="text">Privacy</p>
+                    <p class="text">Terms</p>
+                </li>
+            </ul>
+            <ul class="footer-grid">
+                <li>
+                    <span class="footer_header_liste">Social</span>
+                    <p class="text">Facebook</p>
+                    <p class="text">Instagram</p>
+                    <p class="text">Twitter</p>
+
+                </li>
+            </ul>
+        </footer>
+    </article>
+
 </body>
 </html>
