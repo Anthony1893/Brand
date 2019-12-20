@@ -1,0 +1,28 @@
+#body{
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 10% 10% auto 10% 10%;
+    grid-template-rows: 80px 80px 80px 80px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 80%;
+}
+.footer_header_liste{
+   margin-left: 40%;
+    color: lightgray;
+}
+.text{
+    color: white;
+}
