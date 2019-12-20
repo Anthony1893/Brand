@@ -25,7 +25,7 @@ article {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: blanchedalmond;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -41,7 +41,7 @@ article {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: lightcoral;
 }
 
 .sidenav .closebtn {
